@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nova Studios: Community</title>
+		<p class="label CName" style="width: 200px; height: 25px; text-align: center;"><font size="+2">Nova Studios</font></p>	
+		<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+		<a href="mailto:NovaStudios@gmail.com" class="fa fa-google"></a>
+		<a id="number" onmouseover="ShowNumber(event)" onmouseleave="HideNumber(event)" class="fa fa-phone"></a>
+		<a href="https://goo.gl/maps/wXG3RqcgThR8nSiu8" class="fa fa-map-marker"></a>	
+		<script src="PageScript.js"></script>
+		<link rel="stylesheet" type="text/css" href="CustomStyles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<br>
+		<button class="button" onclick="ChangePage('index.html')">Home</button>
+		<button class="button" onclick="ChangePage('ProductsPage.html')">Products</button>
+		<button class="button" onclick="ChangePage('SupportPage.html')">Help & Support</button>
+		<div class="Panel">
+			We donate some of are profit back to our community
+			<br>
+			At checkout you can decide what non-profit orgranzation the money will go to.
+			<br>
+			Here are the place we are donating to:
+			<br>
+			<form action="" style="text-align: left;" onchange="OnChanged()" id="non-profit">
+				<input type="radio" name="non-profit" value="SA"> Salvation Army <br>
+				<input type="radio" name="non-profit" value="CCSS"> Catulpa Community Support Services <br>
+				<input type="radio" name="non-profit" value="YMCA"> YMCA
+			</form>
+			<p id="charity"></p>
+		</div>
+	</body>
+</html>

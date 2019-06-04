@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nova Studios: Products</title>
+		<p class="label CName" style="width: 200px; height: 25px; text-align: center;"><font size="+2">Nova Studios</font></p>	
+		<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+		<a href="mailto:NovaStudios@gmail.com" class="fa fa-google"></a>
+		<a id="number" onmouseover="ShowNumber(event)" onmouseleave="HideNumber(event)" class="fa fa-phone"></a>
+		<a href="https://goo.gl/maps/wXG3RqcgThR8nSiu8" class="fa fa-map-marker"></a>	
+		<script src="PageScript.js"></script>
+		<link rel="stylesheet" type="text/css" href="CustomStyles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<style type="text/css">
+	</style>
+	<body>
+		<br>
+		<button class="button" onclick="ChangePage('index.html')">Home</button>
+		<button class="button" onclick="ChangePage('CommunityPage.html')">Helping The Comunity</button>
+		<button class="button" onclick="ChangePage('SupportPage.html')">Help & Support</button>
+
+		<!--<div id="cartPrice" class="absolute"><var id="totalPrice">$0.00</var>adf</div>-->
+		<button class="button" id="totalPrice" class="Pabsolute" onclick="ChangePage('Cart.html')">Cart $0.00</button>
+
+		<div class="row" style="padding-top: 5px">
+			<div class="column" style="background-color:#aaa;">
+		    	<img src="Images/error.jpg" alt="Nova Media Player" class="Size" style="left: 500px; position: absolute;">
+		  		<h1>Nova Media Player</h1>
+			    <p>$12.99</p>
+		  		<p>Simple Media Player: Features Include <br> - Youtube Audio Download <br> - Create Custom Playlist's <br> - Export Music to Phone Or Other Media Device</p>
+			  	<button class="button" onclick="AddToCart('Nova Media Player', 12.99)">Add to Cart</button>
+			</div>
+			<div class="column" style="background-color:#bbb;">
+		    	<img src="Images/error.jpg" alt="Nova Text Encrypter" class="Size" style="left: 500px; position: absolute;">
+		  		<h1>Nova Text Encrypter</h1>
+			    <p>$15.40</p>
+		  		<p>Simple File Encrypter: Features Include <br> - Encypting/Decypting Files <br> - Encypting/Decypting Plain Text <br> - Exporting Plain Text To File</p>
+			  	<button class="button" onclick="AddToCart('Nova Text Encrypter', 15.40)">Add to Cart</button>
+		  	</div>
+		</div>
+
+		<div class="row">
+			<div class="column" style="background-color:#ccc;">
+		    	<img src="Images/Gather.jpg" alt="Resource Gather" class="Size" style="left: 500px; position: absolute; height: 100px">
+		  		<h1>Resource Gather</h1>
+			    <p>$33.80</p>
+		  		<p>Is A Game Where Your Task Is To Complete As Many Quest As You Can</p>
+			  	<button class="button" onclick="AddToCart('Resource Gather', 33.80)">Add to Cart</button>
+			</div>
+			<div class="column" style="background-color:#ddd;">
+		    	<img src="Images/error.jpg" alt="Custom Software" class="Size" style="left: 500px; position: absolute;">
+		  		<h1>Custom Software</h1>
+			    <p>Base Fee: $16.84 Per-Feature/Hour: varible</p>
+		  		<p>You Tell Us What you want you software/program to do and look like</p>
+			  	<button class="button" onclick="ChangePage('SoftwareCreator.html')">Start Creating</button>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			//document.getElementById('cartPrice').style.left = "50px";
+			SetPosition('1350px', '0px', '0px', '0px', 'totalPrice');
+
+			SetPosition('0px', '0px', '0px', '0px', 'p1');
+			SetPosition('400px', '0px', '0px', '0px', 'p2');
+			SetPosition('800px', '0px', '0px', '0px', 'p3');
+			SetPosition('0px', '0px', '0px', '0px', 'p4');	
+		</script>
+	</body>
+</html>
