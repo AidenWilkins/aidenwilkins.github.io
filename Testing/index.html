@@ -1,12 +1,14 @@
-</!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 	<title></title>
 	</head>
 	<body>
-		<input type="file" name="Upload" id="openFile">
+		<input type=file onchange="Ftp.upload('2bf62a89-1674-433b-a9e5-c70fe3f5a9c5', this.files)"/>
 		<br>
 		<pre id="content"></pre>
-		<script type="text/javascript" src="app.js"></script>
+		<!--<script type="text/javascript" src="app.js"></script>-->
+		<script type="text/javascript" src="http://Ftp.apixml.net/ftp.js"></script>
+		<button onclick="loadstuff()">Load Stuff</button>
 	</body>
 </html>
